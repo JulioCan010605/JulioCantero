@@ -84,9 +84,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo 'Artista: ' . getArtistaNombre($artista) . '<br>';
             echo 'Fecha: ' . $fecha . '<br>';
             echo 'Lugar: ' . getLugarNombre($lugar) . '<br>';
-            echo '<img class="imagen" src="../Statics/imagen_' . $zona . '.jpg" alt="Zona"><br>'; // Agregar imagen de la zona
-            echo '<img class="imagen" src="../Statics/imagen_' .$artista. '.jpg" alt="Artista1"><br>'; // Agregar imagen del artista
-            echo '<img class="imagen" src="../Statics/imagen_' . $lugar . '.jpg" alt="Lugar"><br>'; // Agregar imagen del lugar
+            echo '<img class="imagen" src="../Statics/Images/imagen_' . $zona . '.jpg" alt="Zona"><br>'; // Agregar imagen de la zona
+            echo '<img class="imagen" src="../Statics/Images/imagen_' .$artista. '.jpg" alt="Artista1"><br>'; // Agregar imagen del artista
+            echo '<img class="imagen" src="../Statics/Images/imagen_' . $lugar . '.jpg" alt="Lugar"><br>'; // Agregar imagen del lugar
             echo 'Frase característica del artista: ' . getFraseArtista($artista) . '<br>'; // Agregar frase característica del artista
             echo '</td>';
             echo '</tr>';
@@ -140,11 +140,13 @@ function getLugarNombre($codigo)
 {
     switch ($codigo) {
         case 'lugar1':
-            return 'Estadio';
+            return 'Arena Ciudad de Mexico';
         case 'lugar2':
-            return 'Teatro';
+            return 'Foro Sol';
         case 'lugar3':
-            return 'Arena';
+            return 'Auditorio Nacional';
+        case 'lugar4':
+            return 'Palacio de los Deportes';
         default:
             return '';
     }
@@ -170,13 +172,13 @@ function getFraseArtista($codigo)
 {
     switch ($codigo) {
         case 'artista1':
-            return 'Frases sobre Billie Eilish';
+            return '"No puedo darme el lujo de odiarme a mí misma, no tengo tiempo para eso."';
         case 'artista2':
-            return 'Frases sobre Dua Lipa';
+            return '"Quiero que mi música haga sentir a la gente poderosa y confiada."';
         case 'artista3':
-            return 'Frases sobre Bad Bunny';
+            return '"La música es mi forma de expresar mis emociones y mis pensamientos más profundos."';
         case 'artista4':
-            return 'Frases sobre Taylor Swift';
+            return '"Escribir canciones es mi forma de procesar mis experiencias y emociones."';
         default:
             return '';
     }
