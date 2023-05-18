@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TickWebMaster</title>
+    <link rel="icon" href="./Boletos.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Statics/Styles/Styles.css">
+</head>
+<body>
+    <h2>Compra tus boletos</h2>
+
+    <form method="POST" action="./Dynamics/ticketmaster.php">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="zona">Zona:</label>
+        <select id="zona" name="zona" required>
+            <option value="">Seleccionar zona</option>
+            <option value="zona1">Zona VIP</option>
+            <option value="zona2">Zona Oro</option>
+            <option value="zona3">Zona Barrera General</option>
+            <option value="zona4">Zona General</option>
+        </select>
+
+        <label for="boletos">Cantidad de boletos:</label>
+        <input type="number" id="boletos" name="boletos" required>
+
+        <label for="artista">Artista:</label>
+        <select id="artista" name="artista" required>
+            <option value="">Seleccionar artista</option>
+            <option value="artista1">Billie Eilish</option>
+            <option value="artista2">Dua Lipa</option>
+            <option value="artista3">Bad Bunny</option>
+            <option value="artista4">Taylor Swift</option>
+        </select>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="lugar">Lugar:</label>
+        <select id="lugar" name="lugar" required>
+            <option value="">Seleccionar lugar</option>
+            <option value="lugar1">Arena Ciudad de Mexico</option>
+            <option value="lugar2">Foro Sol</option>
+            <option value="lugar3">Auditorio Nacional</option>
+            <option value="lugar4">Arena Cd.de Mexico</option>
+        </select>
+
+        <label>Extras:</label>
+        <input type="checkbox" id="extra1" name="extras[]" value="extra1">
+        <label for="extra1">Paquete de bebidas y comida</label>
+        <br>
+        <input type="checkbox" id="extra2" name="extras[]" value="extra2">
+        <label for="extra2">Toma de foto con artista</label>
+        <br>
+        <input type="checkbox" id="extra3" name="extras[]" value="extra3">
+        <label for="extra3">Estacionamiento</label>
+        <br>
+
+        <button type="submit">Comprar</button>
+    </form>
+</body>
+</html>
