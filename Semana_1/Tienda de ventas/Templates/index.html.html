@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A.G. Perfumes</title>
+  <link rel="icon" href="./Faavicoin.ico" type="Favicoin/x-icon">
+  <style>
+    body {
+      background-image: url("./Fondo.jpg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <h1>Venta de Perfumes</h1>
+  <p>Bienvenid@ a nuestra tienda de perfumes. </p>
+  <p>Aquí encontrarás una selección de los mejores perfumes del mercado para dama y caballero. No dudes en hacer un pedido con nosortros.</p>
+
+  <hr>
+  <table border="2" align="center">
+    <tr>
+      <td>
+        <img src="./DyG.jpg" alt="DyG" width="140" height="120">
+        <h3>Dolce & Gabbana</h3>
+        <p>Dolce & Gabbanna</p>
+        <p>K Eau De Toilette for Men</p> 
+        <p>3.3 oz/ 100 ml - Spray</p>
+        <p>K es de hecho en Francia</p>
+      </td>
+      <td>
+        <img src="./Nautica,jpg.jpg" alt="Nautica" width="120" height="140">
+        <h3>Nautica</h3>
+        <p>Nautica Classic</p>
+        <p>Eau de Toilette Spray,</p>
+        <p>3.4 onzas</p>
+        <p>Producto de Belleza</p> 
+        <p>y Cuidado Personal</p>
+      </td>
+      <td>
+        <img src="./Ys.jpg" alt="Ys" width="160" height="140">
+        <h3>Yves Saint</h3>
+        <p>Yves Saint</p>
+        <p>Laurent Mon Paris Spray,</p>
+        <p>3 Fluid Ounce</p>
+        <p>No vendemos imitaciones </p>
+      </td>
+      <td>
+        <img src="./PH.jpg" alt="PH" width="110" height="160">
+        <h3>Paris Hilton</h3>
+        <p>Paris Hilton Can Can</p> 
+        <p>Spray 3.40 oz</p>
+        <p>La fragancia está inspirada</p>
+        <p>en la película Moulin Rouge</p>
+        <p>y la canción Lady Marmalade.</p>
+      </td>
+      <td>
+        <img src="./MKP.jpg" alt="MKP" width="120" height="140">
+        <h3>Katy Perry</h3>
+        <p>Perfume Meou! de Katy Perry</p>
+        <p>100 ml Edición Especial</p>
+        <p>Para Dama, fragancia duradera</p>
+      </td>
+    </tr>
+    </table>
+
+    <hr>
+    <h2>Encuentra más de nuestros perfumes en nuestro Instagram</h2>
+    <a href="https://www.instagram.com/p/CoWTEN9Of6i/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">Instagram</a>
+    <img src="./Insta.jpg" alt="Insta" width="140" height="140">
+    <hr>
+
+  <h2>Compra aqui con nosotros</h2>
+  
+  <form>
+    <h3>Datos del comprador</h3>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required><br><br>
+    
+    <h3>Especificaciones del producto</h3>
+    <label for="producto">Producto:</label>
+    <select id="producto" name="producto">
+        <option value="perfume1"></option>
+      <option value="perfume1">Dolce & Gabbanna K Eau De Toilette for Men</option>
+      <option value="perfume2">Nautica Classic Eau de Toilette Spray</option>
+      <option value="perfume3">Yves Saint Laurent Mon Paris Spray</option>
+      <option value="perfume4">Paris Hilton Can Can</option>
+      <option value="perfume5">Perfume Meou! de Katy Perry</option>
+    </select><br><br>
+    
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" name="cantidad" min="1" max="10" required><br><br>
+    
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
+    <label for="envio">Opciones de envío:</label><br>
+<input type="radio" id="envio1" name="envio" value="envio_normal" checked>
+<label for="envio1">Envío Normal</label><br>
+<input type="radio" id="envio2" name="envio" value="envio_express">
+<label for="envio2">Envío Express</label><br><br>
+
+<label for="acuerdo">¿Estás de acuerdo con tu pedido? Si es así, marca la casilla</label>
+<input type="checkbox" id="acuerdo" name="acuerdo" required><br><br>
+<input type="submit" value="Enviar">
+<input type="reset" value="Borrar">
