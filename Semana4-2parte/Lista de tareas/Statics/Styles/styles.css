@@ -1,0 +1,62 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+body, html {
+    height: 100%;
+    margin: 0% ;
+    padding: 0%;
+}
+
+body {
+    background: linear-gradient(to bottom right, #0052FF, #00FFEA, #0FFF27);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #13010100;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(248, 247, 244);
+}
+
+h1 {
+    color: #000000;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#other-subject {
+    display: none;
+}
+
+#task-list {
+    margin-top: 50px;
+    margin-bottom: 30px; 
+}
+
+.list-group-item {
+    position: relative;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0CA5E8;
+    margin-bottom: 10px;
+}
+
+.list-group-item label {
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.list-group-item .btn {
+    margin-left: 5px;
+    margin-bottom: 10px;
+}

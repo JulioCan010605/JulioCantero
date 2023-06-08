@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../Statics/img/lista.png" />
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="../Libs/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Statics/styles.css">
+    <style>
+        .container {
+            max-width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!--Formulario para la tarea -->
+    <div class="container">
+        <h1 class="text-center mt-5">Lista de Tareas</h1>
+
+        <form id="task-form" class="mb-3">
+            <div class="form-group">
+                <label for="title">Título:</label>
+                <input type="text" class="form-control" id="title" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Materia:</label>
+                <select class="form-select" id="subject" required>
+                    <option value="" selected disabled>Seleccionar materia</option>
+                    <option value="Matemáticas">Matemáticas</option>
+                    <option value="Historia">Historia</option>
+                    <option value="Ciencias">Fisica</option>
+                    <option value="Otra">Otra</option>
+                </select>
+            </div>
+            <div class="form-group" id="other-subject" style="display: none;">
+                <label for="other-subject-input">Materia:</label>
+                <input type="text" class="form-control" id="other-subject-input">
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class="btn btn-primary">Agregar Tarea</button>
+            </div>
+        </form>
+
+        <hr>
+
+        
+        <!--Contenedor para la lista de tareas-->
+        <div id="task-list">
+            <h2>Tareas</h2>
+            <ul class="list-group"></ul>
+        </div>
+
+        <!--Contadores de las tareas totales y completadas-->
+        <div id="task-counters" class="text-center mt-3">
+            <p>Total de tareas: <span id="total-counter">0</span></p>
+            <p>Tareas completadas: <span id="completed-counter">0</span></p>
+        </div>
+    </div>
+
+    <script src="../Libs/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../Dynamics/index.js"></script>
+</body>
+
+</html>
